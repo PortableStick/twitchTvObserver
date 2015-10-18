@@ -136,6 +136,9 @@ body{
 				font-size: 6em;
 				font-family: $montserrat;
 			}
+			img.logo{
+				max-width: 100px;
+			}
 		}
 		a:hover{
 			color: $linkHoverColor;

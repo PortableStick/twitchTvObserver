@@ -1,9 +1,9 @@
-<div id="userList">
+<div id="userList" ng-init="buttonFilter = ''">
 	<header class="navbar navbar-default">
 		<ul class="nav navbar-nav">
-			<li><a href="" ng-click="buttonFilter = ''">All</a></li>
-			<li><a href="" ng-click="buttonFilter = {isStreaming: true}">Online</a></li>
-			<li><a href="" ng-click="buttonFilter = {isStreaming: false}">Offline</a></li>
+			<li ng-class="buttonFilter === '' ? 'active' : 'inactive'"><a href="" ng-click="buttonFilter = ''">All</a></li>
+			<li ng-class="buttonFilter.isStreaming ? 'active' : 'inactive'"><a href="" ng-click="buttonFilter = {isStreaming: true}">Online</a></li>
+			<li ng-class="buttonFilter.isStreaming === false ? 'active' : 'inactive'"><a href="" ng-click="buttonFilter = {isStreaming: false}">Offline</a></li>
 		</ul>
 	</header>
 	<div class="search">
