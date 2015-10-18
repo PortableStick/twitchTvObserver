@@ -7,6 +7,7 @@ body{
 }
 
 #userList{
+	position: relative;
 	border: 1px solid green;
 	margin: 40px 35% 0;
 	background-color: $userListBG;
@@ -23,15 +24,28 @@ body{
 			}
 		}
 	}
-
+	
 	.search{
-		margin:0 10px 5px;
-		border-radius: 23px;
-		width: 95%;
+		margin-bottom: 10px;
+		position: relative;
+		input{
+			text-indent: 30px;
+			border-radius: 23px;
+			width: 95%;
+			margin-left: 12px;
+			&:focus{
+				color: black;
+			}
 
-		&:focus{
-			color: black;
+			&:placeholder{
+				color: $placeholderColor;
+			}
 		}
+		.fa-search { 
+			  position: absolute;
+			  top: 10px;
+			  left: 23px;
+			}
 	}
 
 

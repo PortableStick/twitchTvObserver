@@ -6,7 +6,10 @@
 			<li><a href="" ng-click="buttonFilter = {isStreaming: false}">Offline</a></li>
 		</ul>
 	</header>
-	<input type="search" class="search form-control" placeholder="search" ng-model="searchFilter"></input>
+	<div class="search">
+		<i class="fa fa-search" id="searchIcon"></i>
+		<input type="search" class="form-control" placeholder="search" ng-model="searchFilter"></input>
+	</div>
 	<ul id="users">
 		<li ng-repeat="user in users | orderBy: 'name' | filter: buttonFilter | filter: searchFilter ">
 			<a ng-href="#/{{user.name}}">
