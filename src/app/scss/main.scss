@@ -1,31 +1,67 @@
+a:hover{
+	text-decoration: none;
+}
+
+body{
+	background-color: $mainPageBG;
+}
+
 #userList{
 	border: 1px solid green;
 	margin: 40px 35% 0;
-
+	background-color: $userListBG;
 	header{
 		ul:first-child{
 			margin-left: 20%;
 		}
 		li{
 			font-size: 2em;
+
+			a{
+				font: $montserrat;
+				font-weight: 700;
+			}
 		}
 	}
 
 	.search{
-		margin-bottom: 5px;
+		margin:0 10px 5px;
 		border-radius: 23px;
+		width: 95%;
+
+		&:focus{
+			color: black;
+		}
 	}
+
 
 	#users{
 
 		li{
-		list-style: none;
-		font-size: 2.5em;
-		padding: 7px 0;
+			list-style: none;
+			font-size: 2.5em;
+			padding: 7px 0;
+			border-bottom: 1px solid $listBorderColor;
+		
+			a{
+				color: $listColor;
+				font: $montserrat;
+				font-weight: 300;
+
+			}
+
+			a:hover{
+				color: $listHoverColor;
+			}
+
+		
 
 		.name, .streamIcon{
 			vertical-align: middle;
 		}
+
+
+
 		img{
 			max-width: 100px;
 		}//img
@@ -54,4 +90,59 @@
 
 		}//#users
 
+}
+
+#userPage{
+	height: 100vh;
+
+	header{
+		background-color: $headerBG;
+		padding: 7px 0;
+		margin-bottom: 10px;
+		
+		a{
+			color: $headerColor;
+			padding: 0 10px;
+			font-size: 1.9em;
+			font: $montserrat;
+			font-weight: 700;
+		}
+		a:hover{
+			color: $headerLinkHover;
+		}
+			
+			
+	}//header
+
+	.container{
+		text-align: center;
+		a{
+			color: $userNameLinkColor;
+			h1.username{
+				font-size: 6em;
+				font-family: $montserrat;
+			}
+		}
+		a:hover{
+			color: $linkHoverColor;
+			text-shadow: 2px 2px 4px $linkHoverShadowColor;
+		}
+
+		p.bio{
+			font-size: 1.6em;
+			text-align: left;
+			background-color: $bioBG;
+			padding: 20px;
+			color: $bioColor;
+			font: $robotoSlab;
+			font-weight: 300;
+		}
+
+		img{
+			border-radius: 23px;
+			box-shadow	:	0 20px 8px -15px $boxShadow;
+			margin-bottom: 15px;
+		}
+	}//container
+	
 }

@@ -1,8 +1,28 @@
+/* Fonts
+================================ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Montserrat:300,700);
+
+$robotoSlab					:	'Robot Slab', sans;
+$montserrat					:	'Montserrat', times;
+
 /* Color declarations
 ================================ */
 
+//feedback colors
 $goGreen					:	#05B245;
 $errorRed					:	#B20800;
+
+
+$darkBlue					:	#48527F;
+$lightBlueGrey				:	#DDE3FF;
+$blue						:	#90A5FF;
+$darkGrey					:	#6E727F;
+$blueGrey					:	#7384CC;
+$white						:	#fff;
+$transparentBlack			:	rgba(0,0,0,0.7);
+$transparentGrey			:	rgba(75,75,75,0.4);
+$fontBlack					:	#444;
 
 
 /* Color assingments
@@ -10,3 +30,24 @@ $errorRed					:	#B20800;
 
 $isStreaming				:	$goGreen;
 $isNotStreaming				:	$errorRed;
+
+//Background colors
+$headerBG					:	$darkBlue;
+$mainPageBG					:	$white;
+$userListBG					:	$darkBlue;
+$bioBG						:	$lightBlueGrey;
+
+//Font colors
+$headerColor				:	$white;
+$userNameLinkColor			:	$fontBlack;
+$linkHoverColor				:	lighten($userNameLinkColor, 07%);
+$headerLinkHover			:	darken($headerColor, 05%);
+$bioColor					:	$fontBlack;
+$listColor					:	$white;
+$listHoverColor				:	darken($listColor, 10%);
+$userPageColor				:	$darkGrey;
+$linkHoverShadowColor		:	$transparentGrey;
+
+$listBorderColor			:	opacify($blueGrey, .2);
+
+$boxShadow					:	$transparentBlack;

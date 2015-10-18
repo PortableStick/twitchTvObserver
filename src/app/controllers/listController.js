@@ -7,7 +7,7 @@
 
 			$scope.users = [];
 
-			var initialUsers 	= ["freecodecamp", "storbeck", "terakilobyte", "habathcx","RobotCaleb","thomasballinger","noobs2ninjas","beohoff", "brunofin", "comster404"],
+			var initialUsers 	= ["freecodecamp", "storbeck", "terakilobyte", "habathcx","RobotCaleb","thomasballinger","noobs2ninjas","beohoff", "brunofin", "comster404", "taniauncensored"],
 			 		clientId	= 'akii9u8wn89o3psqjxxogne0nodprrs';
 			 		
 			 initialUsers.map(function(x){
