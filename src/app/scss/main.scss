@@ -1,0 +1,57 @@
+#userList{
+	border: 1px solid green;
+	margin: 40px 35% 0;
+
+	header{
+		ul:first-child{
+			margin-left: 20%;
+		}
+		li{
+			font-size: 2em;
+		}
+	}
+
+	.search{
+		margin-bottom: 5px;
+		border-radius: 23px;
+	}
+
+	#users{
+
+		li{
+		list-style: none;
+		font-size: 2.5em;
+		padding: 7px 0;
+
+		.name, .streamIcon{
+			vertical-align: middle;
+		}
+		img{
+			max-width: 100px;
+		}//img
+
+		.streamIcon{
+			i{
+				padding: 0 20px;
+			}
+			i.isStreaming{
+				color: $isStreaming;
+			}
+			i.isNotStreaming{
+				color: $isNotStreaming;
+			}
+		}//.streamIcon
+
+	.error{
+		color: #ccc;
+		font-style: italic;
+		font-size: 1.9rem;
+		text-align: center;
+
+	}
+
+	}//li
+
+		}//#users
+
+}
