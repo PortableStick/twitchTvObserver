@@ -1,9 +1,9 @@
 <div id="userList">
 	<header class="navbar navbar-default">
 		<ul class="nav navbar-nav">
-			<li><a href="" ng-click="buttonFilter = {}">All</a></li>
-			<li><a href="" ng-click="buttonFilter = {}">Online</a></li>
-			<li><a href="" ng-click="buttonFilter = {}">Offline</a></li>
+			<li><a href="" ng-click="buttonFilter = ''">All</a></li>
+			<li><a href="" ng-click="buttonFilter = {isStreaming: true}">Online</a></li>
+			<li><a href="" ng-click="buttonFilter = {isStreaming: false}">Offline</a></li>
 		</ul>
 	</header>
 	<input type="search" class="search form-control" placeholder="search" ng-model="searchFilter"></input>

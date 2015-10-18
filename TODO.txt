@@ -1,1 +1,3 @@
-TODO.txt
+1. Sort buttons - done
+2. Search icon
+3. Active states for sort buttons
