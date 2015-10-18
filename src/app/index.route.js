@@ -8,9 +8,14 @@
   function routeConfig($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/initialList.html',
+        templateUrl: 'app/partials/userList.html',
         controller: 'ListController',
         controllerAs: 'ListCntl'
+      })
+      .when('/:username',{
+        templateUrl: 'app/partials/users.html',
+        controller: 'UserController',
+        controllerAs: 'UserCntl'
       })
       .otherwise({
         redirectTo: '/'

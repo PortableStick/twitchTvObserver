@@ -3,7 +3,7 @@
 	'use strict';
 
 	angular.module('twitchTvsite')
-		.controller('ListController', ['$scope', '$routeParams', '$log','twitchConnect', '$http', function($scope,$log,twitchConnect, $http){
+		.controller('ListController', ['$scope','$log','twitchConnect', '$http', function($scope,$log,twitchConnect, $http){
 
 			$scope.users = [];
 
