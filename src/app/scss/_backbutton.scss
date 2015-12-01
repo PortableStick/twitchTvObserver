@@ -4,11 +4,10 @@ $padding            : 12px;
 .backBtn {
     border-radius: 5px;
     padding: $padding;
-    font-size: 1.2em;
-    margin-top: 15px;
     position: absolute;
     top: 50px;
-    left: 50px;
+
+    font-size: 1.2em;
     &.light {
         background-color: #fff;
         color: #333;
@@ -22,11 +21,11 @@ $padding            : 12px;
     }
 
     &.sitLeft {
-        float: left;
+        left: 50px;
     }
 
     &.sitRight {
-        float: right;
+        right: 50px;
     }
 
     &:before {
